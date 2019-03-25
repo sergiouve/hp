@@ -1,0 +1,30 @@
+{
+    "name": "hp",
+    "version": "0.0.1",
+    "description": "Node script to get system information ",
+    "main": "bin/index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "bin": {
+        "hp": "./bin/hp"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sergiouve/hp.git"
+    },
+    "keywords": [
+        "Node",
+        "CLI",
+        "System"
+    ],
+    "author": "Sergio Uve",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sergiouve/hp/issues"
+    },
+    "homepage": "https://github.com/sergiouve/hp#readme"
+}
