@@ -5,12 +5,8 @@ const printers = require('../printers');
 const readFlag = require('../utils/readFlag');
 
 battery().then(rawData => {
-    const printer = readFlag('format');
+    const printer = readFlag('format') || 'pretty';
+    const print = printers[printer](rawData);
 
-    if (! printer) {
-        printers['pretty'](rawData);
-        return;
-    }
-
-    printers[printer](rawData);
+    console.log(print);
 });

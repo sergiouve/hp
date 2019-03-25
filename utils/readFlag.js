@@ -4,7 +4,7 @@ const readFlag = flag => {
     })[0];
 
     if (needle) {
-        return needle[0].split('=')[1];
+        return needle.split('=')[1];
     }
 
     return null;
