@@ -8,7 +8,7 @@ battery().then(rawData => {
     const printer = readFlag('format');
 
     if (! printer) {
-        console.log(rawData);
+        printers['pretty'](rawData);
         return;
     }
 
